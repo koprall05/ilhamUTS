@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tentang kami</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about-image {
+  flex: 0 0 400px;
+  margin-right: 40px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.team-section {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.team-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  flex: 0 0 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-image {
+    flex: 0 0 300px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .team-member {
+    flex: 0 0 150px;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+        .footer {
+            background-color: #4C3282;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        .footer-description {
+            font-size: 14px;
+            line-height: 1.6;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .footer-heading {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 0.9;
+            transition: opacity 0.2s;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .social-icon {
+            width: 36px;
+            height: 36px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-2px);
+        }
+
+        .download-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .download-text {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .app-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .app-button {
+            height: 40px;
+            transition: transform 0.2s;
+        }
+
+        .app-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-bottom-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .copyright {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .download-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-bottom-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" style="background-color: #781df8;">
+        <div class="container-fluid">
+            <img src="IMG/LOGO-removebg-preview.png" alt="Bootstrap" width="100" height="40">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">BERANDA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pemesanan.html">PEMESANAN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tentang.html">TENTANG KAMI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontak.html">KONTAK KAMI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="artikel.html">ARTIKEL</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="about-section">
+          <div class="about-image">
+            <img src="IMG/beranda_mobil.jpg" alt="About Us">
+          </div>
+          <div class="about-content">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah perusahaan yang bergerak di bidang jasa rental mobil. Kami menyediakan berbagai jenis mobil dengan harga yang terjangkau untuk kebutuhan perjalanan Anda.</p>
+            <p>Kami berkomitmen untuk memberikan pelayanan terbaik kepada pelanggan kami dengan menjaga kualitas dan kebersihan mobil-mobil kami. Tim kami yang berpengalaman akan memastikan perjalanan Anda berjalan lancar.</p>
+          </div>
+        </div>
+    
+        <div class="team-section">
+          <h2>PEMILIK</h2>
+          <div class="team-members">
+            <div class="team-member">
+              <img src="IMG/saya.jpg" alt="Team Member 1">
+              <h3>ade ilham sejahterawan</h3>
+              <p>OWNER</p>
+            </div>
+            
+            <!-- Add more team members as needed -->
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <img src="IMG/LOGO-removebg-preview.png" alt="ilhamtrans" class="footer-logo">
+                    <p class="footer-description">
+                        ILHAM TRANS adalah Website marketplace sewa mobil P2P lepas kunci atau dengan supir yang
+                        mempertemukan penyewa (guest) dengan pemilik (host). Host ILHAM TRAMS tersebar di beberapa kota
+                        untuk Sewa Mobil pekalongan, batang, pemalang, banjarnegara, wonosobo, purwokweto, serta belasan
+                        lokasi lainnya.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/hmtzyyy?igsh=MTE3ZXM2am5jdjFjdQ==" class="social-icon">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        <a href="https://x.com/ilhmsjhtrwn?t=kVAt2thZmpGtUor5-FlL5g&s=09" class="social-icon">
+                            <i class="fa-brands fa-square-x-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/ham.ilham.7921?mibextid=ZbWKwL" class="social-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/6285182667803" class="social-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://youtube.com/@027_adeilhams?si=9DHXyX736x9T9jLs" class="social-icon">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">Produk dan Layanan</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Sewa Mobil (Guest)</a></li>
+                        <li><a href="#">Sewakan Mobil (Host)</a></li>
+                        <li><a href="#">Berbagi Referral</a></li>
+                        <li><a href="#">Kendaraan Liburan</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">Tentang ILHAM TRANS</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Karier</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">Layanan Pelanggan</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Layanan Pengaduan Konsumen ILHAM TRANS</a></li>
+                        <li><a href="#">help@ilhamtrans.id</a></li>
+                        <li>
+                            <p>Direktorat Jenderal Perlindungan Konsumen dan Tertib Niaga<br>
+                                Kementerian Perdagangan Republik Indonesia</p>
+                        </li>
+                        <li><a href="#">Whatsapp: +62 853 1111 1010</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="download-section">
+                <span class="download-text">Download ILHAM TRANS sekarang!</span>
+                <div class="app-buttons">
+                    <img src="IMG/gplay.png" alt="Download on App Store" class="app-button">
+                    <img src="IMG/appstr.png" alt="Get it on Google Play" class="app-button">
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">© 2023 Future Mobility Solutions</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Sistem Penggunaan Pelayanan</a>
+                    <a href="#">Kebijakan privasi</a>
+                    <a href="#">Anti-Bribery Corruption</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
